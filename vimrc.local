@@ -1,34 +1,82 @@
-﻿set nocompatible                " Use Vim defaults (much better!)
-set bs=indent,eol,start         " allow backspacing over everything in insert mode
-"set ai                         " always set autoindenting on
-"set backup                     " keep a backup file
-set viminfo='20,\"50            " read/write a .viminfo file, don't store more
-                                " than 50 lines of registers
-set history=50                  " keep 50 lines of command line history
-"set mouse=a                        " Enable mouse usage (all modes)
-set number                      " Show line numbers
-set background=dark             " Set background dark
-set is hls ic scs               " Opções espertas de busca
-set sm                          " ShowMatch: mostra o início do bloco recem fechado
-set ruler                       " Régua: mostra a posição do cursor
-set shm=filmnrwxt               " ShortMessages: encurta as mensagem da régua
-set wildmode=longest,list       " para completação do TAB igual ao bash
-set visualbell                  " pisca a tela ao inves de bipar
-set et                          " ExpandTab: troca TABs por espacos
-set ts=4                        " TabStop: numero de caracteres de avanco do TAB
-set softtabstop=4    
+" Use Vim defaults (much better!)
+set nocompatible   
+
+" Allow backspacing over everything in insert mode
+set bs=indent,eol,start  
+
+" Always set autoindenting on
+"set ai         
+
+" Keep a backup file
+"set backup    
+" read/write a .viminfo file, don't store more than 50 lines of registers
+set viminfo='20,\"50 
+
+" Keep 50 lines of command line history
+set history=50  
+
+" Enable mouse usage (all modes)
+"set mouse=a  
+
+" Show line numbers
+set number 
+
+" Set background dark
+set background=dark   
+
+" Opções espertas de busca
+set is hls ic scs
+
+" ShowMatch: mostra o início do bloco recem fechado
+set sm
+
+" Régua: mostra a posição do cursor
+set ruler  
+
+" ShortMessages: encurta as mensagem da régua
+set shm=filmnrwxt
+
+" Autocomplete através do TAB, semelhando ao Bash
+set wildmode=longest,list
+
+" Pisca a tela ao inves de bipar
+set visualbell
+
+" ExpandTab: troca TABs por espacos
+set et
+
+" TabStop: numero de caracteres de avanco do TAB
+set ts=4
+
+set softtabstop=4 
+
 set showmode
+
 set autoindent
+
 set smarttab
-set backspace=eol,start,indent  " Usando <BkSpc> para deletar linha
-set showcmd                     " show (partial) command in status line
-set title                       " Mostra o nome do arquivo na parte superior do prompt
+
+" Usando <Backspace> para deletar linha
+set backspace=eol,start,indent
+
+" Show (partial) command in status line
+set showcmd
+
+set title
+
+" Mostra o nome do arquivo na parte superior do prompt
 set modeline
-set autoread                    " Automatically read file changed outside of Vim
+
+" Automatically read file changed outside of Vim
+set autoread
 
 set smartindent
-set tabstop=4
-set shiftwidth=4
-set expandtab
-syntax on
 
+set tabstop=4
+
+set shiftwidth=4
+
+set expandtab
+
+" Habilita a exibição de sintaxe
+syntax on
