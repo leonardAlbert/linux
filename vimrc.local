@@ -1,0 +1,34 @@
+﻿set nocompatible                " Use Vim defaults (much better!)
+set bs=indent,eol,start         " allow backspacing over everything in insert mode
+"set ai                         " always set autoindenting on
+"set backup                     " keep a backup file
+set viminfo='20,\"50            " read/write a .viminfo file, don't store more
+                                " than 50 lines of registers
+set history=50                  " keep 50 lines of command line history
+"set mouse=a                        " Enable mouse usage (all modes)
+set number                      " Show line numbers
+set background=dark             " Set background dark
+set is hls ic scs               " Opções espertas de busca
+set sm                          " ShowMatch: mostra o início do bloco recem fechado
+set ruler                       " Régua: mostra a posição do cursor
+set shm=filmnrwxt               " ShortMessages: encurta as mensagem da régua
+set wildmode=longest,list       " para completação do TAB igual ao bash
+set visualbell                  " pisca a tela ao inves de bipar
+set et                          " ExpandTab: troca TABs por espacos
+set ts=4                        " TabStop: numero de caracteres de avanco do TAB
+set softtabstop=4    
+set showmode
+set autoindent
+set smarttab
+set backspace=eol,start,indent  " Usando <BkSpc> para deletar linha
+set showcmd                     " show (partial) command in status line
+set title                       " Mostra o nome do arquivo na parte superior do prompt
+set modeline
+set autoread                    " Automatically read file changed outside of Vim
+
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+syntax on
+
