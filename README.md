@@ -1,11 +1,11 @@
 # Linux
 Dicas úteis para quem como desenvolvedor e utiliza Linux. Estes exemplos foram utilizados e testados no Ubuntu, porém, nada impede que os mesmos funcionem em outras distribuições, porém, cada uma pode ter uma peculiaridade.
 
-## [LAMP](http://pt.wikipedia.org/wiki/LAMP)
-Instalando os pacotes necessários:
+## LAMP
+Instalando os pacotes necessários para o [LAMP](http://pt.wikipedia.org/wiki/LAMP):
 * `aptitude install php5 apache2 mysql-server libapache2-mod-php5`
 
-Ativando (mod_rewrite)[http://cirofeitosa.com.br/post/urls-mod-rewrite/] do Apache.
+Ativando [mod_rewrite](http://cirofeitosa.com.br/post/urls-mod-rewrite/) do Apache.
 * `a2enmod rewrite`
 
 Reiniciando o Apache para ativar as novas configurações:
@@ -29,6 +29,7 @@ Para validar as alterações feitas devemos reiniciar o Apache:
 * `invoke-rc.d apache2 restart`
 
 ## PHPUnit
+Instalando o PHPUnit:
 * `sudo pear upgrade pear`
 * `sudo pear config-set auto_discover 1`
 * `sudo pear install --alldeps pear.phpunit.de/PHPUnit`
