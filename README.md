@@ -82,7 +82,7 @@ Devemos criar um link simbólico do diretorio criado linux-3.4.6 em /usr/src/ co
 * */usr/src/linux*
 
 Isso se deve ao fato de que, novos programas ao serem instalados, consultam neste diretório para descobrir a versão atual do kernel.
-*`ln -s linux-3.4.6 linux`
+* `ln -s linux-3.4.6 linux`
 
 ### Arquivo de configuração.
 Para compilarmos o kernel, devemos ter um arquivo que contém todas as configurações de hardware, para isso, podemos reaproveitar a configuração atual ou criar um e personalizá-lo.
@@ -92,7 +92,7 @@ Copiando o arquivo de configuração do kernel atual para o que será compilado,
 *`cp /boot/config-$(uname -r) /usr/src/linux/.config`
 
 Após copiado o arquivo, basta executar o comando abaixo onde, ele usará as configurações do kernel atual da maquina.
-*`make localmodconfig`
+* `make localmodconfig`
 
 ##### Utilizar uma nova configuração personalizada
 Caso você desejar personalizar as configurações para uma nova compilação, o mais indicado é o [menuconfig](http://en.wikipedia.org/wiki/Menuconfig), para isto, basta executar o comando:
@@ -110,7 +110,7 @@ Para gerar um pacote e posteriormente instalarmos, basta executar o seguinte com
 
 * `make-kpkg --initrd kernel_image`
 
-## Instalação
+### Instalação
 Tendo gerado o pacote **.deb**, este estará em */usr/src/*, podemos efetuar a instalação através do comando:
 
 * `dpkg -i linux-image-[tab]`
@@ -119,7 +119,7 @@ Após a conclusão de todos os procedimentos, basta reiniciar seu computador e c
 
 * `uname -r`
 
-## Remover uma versão de kernel
+### Remover uma versão de kernel
 Primeiramente, devemos listar as versões de kernel que temos instalados em nosso sistema.
 * `dpkg --get-selections | grep linux-image`
 
