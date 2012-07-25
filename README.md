@@ -51,8 +51,7 @@ iface wlan0 inet dhcp
 	wpa-psk  [password da rede]
 
 ### Configurando interface de rede Ethernet com IP estático
-<pre><code>
-auto eth0
+<pre><code>auto eth0
 iface eth0 inet static
 	address 10.1.60.XXX
 	netmask 255.255.0.0
