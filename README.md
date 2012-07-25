@@ -45,10 +45,10 @@ Instalando o pacote referente:
 O arquivo de configuração em distribuições baseadas no Debian é o */etc/network/interfaces*.
 
 ### Configurando interface de rede wireless via DHCP
-auto wlan0 
+<pre><code>auto wlan0 
 iface wlan0 inet dhcp
 	wpa-ssid [nome da rede]
-	wpa-psk  [password da rede]
+	wpa-psk  [password da rede]</code></pre>
 
 ### Configurando interface de rede Ethernet com IP estático
 <pre><code>auto eth0
@@ -57,9 +57,7 @@ iface eth0 inet static
 	netmask 255.255.0.0
 	gateway 10.1.230.2
 	network 10.1.0.0
-	dns-nameservers 172.16.2.11 172.16.2.12
-</code></pre>
-    
+	dns-nameservers 172.16.2.11 172.16.2.12</code></pre>
 
 ###### Testando as configurações
 Devemos reiniciar o serviço de rede através do comando:
