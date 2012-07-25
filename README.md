@@ -52,12 +52,12 @@ iface wlan0 inet dhcp
 
 ### Configurando interface de rede Ethernet com IP estático
 auto eth0
-iface eth0 inet static
+`iface eth0 inet static
     address 10.1.60.XXX
     netmask 255.255.0.0
     gateway 10.1.230.2
     network 10.1.0.0
-    dns-nameservers 172.16.2.11 172.16.2.12
+    dns-nameservers 172.16.2.11 172.16.2.12`
 
 ###### Testando as configurações
 Devemos reiniciar o serviço de rede através do comando:
