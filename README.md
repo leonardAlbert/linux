@@ -91,7 +91,7 @@ Para compilarmos o kernel, devemos ter um arquivo que contém todas as configura
 
 ##### Utilizando arquivo de configuração do kernel atual.
 Copiando o arquivo de configuração do kernel atual para o que será compilado, assim, não é necessário com o make config ficar fazendo as milhares de configurações, para isso basta executar o seguinte comando:
-*`cp /boot/config-$(uname -r) /usr/src/linux/.config`
+* `cp /boot/config-$(uname -r) /usr/src/linux/.config`
 
 Após copiado o arquivo, basta executar o comando abaixo onde, ele usará as configurações do kernel atual da maquina.
 * `make localmodconfig`
